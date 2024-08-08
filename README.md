@@ -36,5 +36,5 @@ Todas as imagens e vídeos desta página são isentos de direitos autorais e for
 Se precisar de ajuda adicional ou tiver perguntas específicas, você pode nos contatar através do e-mail: 
 edu321heri@gmail.com
 ## Licença
-
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
    

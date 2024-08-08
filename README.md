@@ -16,9 +16,9 @@ Ao entrar no site, você encotrará um menu de navegação na parte superior da 
 - **CONTATO**: Aqui, está um local onde você pode entrar em contato conosco.
 
   
-- # Funcionalidades
+ # Funcionalidades
 - ### 1. **HOME**
- Na página inicial, você vai perceber atalhos chamativos e ver uma seleção dos nossos cafés principais.
+     Na página inicial, você vai perceber atalhos chamativos e ver uma seleção dos nossos cafés principais.
  - ### 2. **NOSSA HISTORIA**
    Em **nossa história**, você pode descobrir a origem do 'Café de Vó', além de explorar nossa missão, visão e valores.
 - ### 3. **CARDÁPIO**
@@ -32,6 +32,8 @@ Ao entrar no site, você encotrará um menu de navegação na parte superior da 
 A página foi adaptada a todos os tipos de telas sem problemas, além de para telas menores adicionamos um menu Hambúrguer na parte superior do site.
 # Agradecimentos
 Todas as imagens e vídeos desta página são isentos de direitos autorais e foram obtidos do site Pexels. Todas foram editadas por mim.
+# Observação
+Criei dois arquivos HTML para resolver o erro 404 que estava ocorrendo.
 # Contatos e Suportes
 Se precisar de ajuda adicional ou tiver perguntas específicas, você pode nos contatar através do e-mail: 
 edu321heri@gmail.com

@@ -1,217 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café de vó</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
-       :root {
-    --cor-1: #8B4513; 
-    --cor-2: #ffffff;
-    --cor-3: #f0f0f0; 
-    --cor-4: #5a2a07; 
-    --cor-5: #411e05; 
-    --cor-6: #006400; 
-    --cor-7: #000000; 
-    --cor-8: #494949;
-    --cor-9: #313131f6; 
-    --fonte-principal: 'Merriweather', serif; 
-}
+        :root {
+            --cor-1: #8B4513;
+            --cor-2: #ffffff;
+            --cor-3: #f0f0f0;
+            --cor-4: #5a2a07;
+            --cor-5: #411e05;
+            --cor-6: #006400;
+            --cor-7: #000000;
+            --cor-8: #494949;
+            --cor-9: #313131f6;
+            --fonte-principal: 'Merriweather', serif;
+        }
 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- body {
-    width: 100vw;
-    height: 100vh;
-    line-height: 1.6; 
- }
- section{
-    overflow-x: hidden;
- }
-.img-logo{
-    width: 90px;
-    margin-right: 20px;
-}
-.header, .nagivation_header{
-    background-color: var(--cor-2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.header{
-    box-shadow: 1px 1px 4px var(--cor-7);
-    justify-content: center;    
-    padding: 0 ; 
-    height: 10%;  
-    position: fixed;
-    width: 100%;
-    z-index: 3; 
-}     
-.nagivation_header{
-    margin-right: -50px;
-    gap: 3em;
-    z-index: 2;
-}
-.nagivation_header a{
-    text-decoration: none;
-    color: var(--cor-1);
-    transition: color 0.3s ease, background-color 0.3s ease; 
-    font-weight: bold;
-    font-size: 1.1em;
-    font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px ; 
-    border-radius: 4px;   
-}
-.nagivation_header a:hover{
-  color: var(--cor-5);
-}
-.btn_icon_header{
-    display: none;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
-   width: 80px;
-   height: 40px;
-   font-size: 24px;
-}
+        body {
+            width: 100vw;
+            height: 100vh;
+            line-height: 1.6;
+        }
 
- @media screen and (max-width: 768px)  {
- .btn_icon_header {
-        display: block;
-  }
+        section {
+            overflow-x: hidden;
+        }
 
- .nagivation_header{
-        position: absolute;
-        flex-direction: column;
-        background-color:var(--cor-2);
-        top: 0;
-        height: calc(100vh - 60px);
-        width: 60vw;
-        padding:20px;
-        animation-duration: .5s;
-        margin-left: -1000vw;
-        cursor: pointer;  
-    }
-    .nagivation_header a:hover {
-    background-color: var(--cor-5);  
-    color: var(--cor-2); 
-    margin-left: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-2px); 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-    #elemento img {
-     width: 30%;
-    }
-   
-}
+        .img-logo {
+            width: 90px;
+            margin-right: 20px;
+        }
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgba(128, 128, 128, 0.151);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        .header,
+        .nagivation_header {
+            background-color: var(--cor-2);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-#campo1 {
-    background: url('img/Torra.jpg') no-repeat center center/cover;
-    background-color: var(--cor-7);
-    width: 100%;
-    height: 600px;
-    margin-bottom: 50px;
-}
+        .header {
+            box-shadow: 1px 1px 4px var(--cor-7);
+            justify-content: center;
+            padding: 0;
+            height: 10%;
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
 
-#corpo {
-    text-align: center;
-    background-color: var(--cor-2);
-    padding: 30px;
-    width: 90%;
-    border-radius: 8px;
-    box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
+        .nagivation_header {
+            margin-right: -50px;
+            gap: 3em;
+            z-index: 2;
+        }
 
-#corpo h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    padding: 20px;
-    color: var(--cor-4);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-}
+        .nagivation_header a {
+            text-decoration: none;
+            color: var(--cor-1);
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-weight: bold;
+            font-size: 1.1em;
+            font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            border-radius: 4px;
+        }
 
-#corpo p {
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--cor-5);
-    text-align: justify;
-    margin: 0;
-}
+        .nagivation_header a:hover {
+            color: var(--cor-5);
+        }
 
-#campo2 {
-    text-align: center;
-}
+        .btn_icon_header {
+            display: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 80px;
+            height: 40px;
+            font-size: 24px;
+        }
 
-#campo2 img {
-    display: block;
-    margin: 30px auto;
-    margin-bottom: 30px;
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform var(--transicao), box-shadow var(--transicao);
-}
+        @media screen and (max-width: 768px) {
+            .btn_icon_header {
+                display: block;
+            }
 
-#campo2 img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+            .nagivation_header {
+                position: absolute;
+                flex-direction: column;
+                background-color: var(--cor-2);
+                top: 0;
+                height: calc(100vh - 60px);
+                width: 60vw;
+                padding: 20px;
+                animation-duration: .5s;
+                margin-left: -1000vw;
+                cursor: pointer;
+            }
 
-#campo3 {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: var(--cor-2);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+            .nagivation_header a:hover {
+                background-color: var(--cor-5);
+                color: var(--cor-2);
+                margin-left: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            }
 
-#campo3 h1 {
-    font-size: 2em;
-    color: var(--cor-4);
-    margin-bottom: 10px;
-    padding-left: 20px;
-    text-transform: uppercase;
-}
+            #elemento img {
+                width: 30%;
+            }
 
-#campo3 p {
-    font-size: 1.3em;
-    line-height: 1.8;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: var(--cor-8);
-}
-#elemento {
-   display: block;
-    margin: 20px auto;
-    margin-top: -20px;
-    width: 30%;
-}
-  </style>
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.151);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #campo1 {
+            background: url('img/Torra.jpg') no-repeat center center/cover;
+            background-color: var(--cor-7);
+            width: 100%;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        #corpo {
+            text-align: center;
+            background-color: var(--cor-2);
+            padding: 30px;
+            width: 90%;
+            border-radius: 8px;
+            box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        #corpo h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding: 20px;
+            color: var(--cor-4);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        #corpo p {
+            font-size: 1.4em;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--cor-5);
+            text-align: justify;
+            margin: 0;
+        }
+
+        #campo2 {
+            text-align: center;
+        }
+
+        #campo2 img {
+            display: block;
+            margin: 30px auto;
+            margin-bottom: 30px;
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform var(--transicao), box-shadow var(--transicao);
+        }
+
+        #campo2 img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        #campo3 {
+            width: 90%;
+            margin: auto;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: var(--cor-2);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #campo3 h1 {
+            font-size: 2em;
+            color: var(--cor-4);
+            margin-bottom: 10px;
+            padding-left: 20px;
+            text-transform: uppercase;
+        }
+
+        #campo3 p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: var(--cor-8);
+        }
+
+        #elemento {
+            display: block;
+            margin: 20px auto;
+            margin-top: -20px;
+            width: 30%;
+        }
+    </style>
 </head>
+
 <body>
     <div class="header" id="header">
         <button class="btn_icon_header" onclick="clicar()">
@@ -240,24 +255,33 @@ article {
 
 
 
-        
+
         <article>
             <div id="campo1">
             </div>
             <div id="corpo">
                 <h1>Torra do Nosso Café</h1>
                 <img src="img/elemento.png" alt="" id="elemento">
-                <p>Levamos a torra do café a sério. Cada grão é cuidadosamente selecionado e torrado artesanalmente para garantir o melhor sabor e aroma. O processo de torra é realizado em pequenas quantidades, permitindo um controle preciso sobre o perfil de sabor de cada lote. O resultado é um café único, com notas equilibradas e uma complexidade que só uma torra personalizada pode oferecer.</p>
+                <p>Levamos a torra do café a sério. Cada grão é cuidadosamente selecionado e torrado artesanalmente para
+                    garantir o melhor sabor e aroma. O processo de torra é realizado em pequenas quantidades, permitindo
+                    um controle preciso sobre o perfil de sabor de cada lote. O resultado é um café único, com notas
+                    equilibradas e uma complexidade que só uma torra personalizada pode oferecer.</p>
             </div>
-          <div id="campo2"> <img src="img/cafe torrado.jpg" alt=""></div>
-          <div id="campo3">
-              <h1>Torra Clara</h1>
-              <p>Grãos de café de cor marrom clara, com pouca ou nenhuma oleosidade na superfície. Essa torra oferece notas vibrantes e frutadas, acidez pronunciada e sabores florais. Destaca as características originais do grão, proporcionando uma experiência suave e refrescante. </p>
-              <h1> Torra Média</h1>
-              <p>Os grãos são de cor marrom médio a escuro, com um leve brilho oleoso na superfície. Apresenta um sabor mais encorpado, com notas de chocolate, especiarias e um leve amargor. A acidez é mais baixa, destacando uma doçura suave.</p>
-              <h1>Torra Escura</h1>
-              <p>Grãos de cor marrom muito escuro, com superfície brilhante e oleosa. O sabor é intenso e forte, com notas de cacau amargo, caramelo queimado e um leve toque de fumaça. Apresenta um corpo pesado, com amargor acentuado e baixa acidez. </p>
-          </div>
+            <div id="campo2"> <img src="img/cafe torrado.jpg" alt=""></div>
+            <div id="campo3">
+                <h1>Torra Clara</h1>
+                <p>Grãos de café de cor marrom clara, com pouca ou nenhuma oleosidade na superfície. Essa torra oferece
+                    notas vibrantes e frutadas, acidez pronunciada e sabores florais. Destaca as características
+                    originais do grão, proporcionando uma experiência suave e refrescante. </p>
+                <h1> Torra Média</h1>
+                <p>Os grãos são de cor marrom médio a escuro, com um leve brilho oleoso na superfície. Apresenta um
+                    sabor mais encorpado, com notas de chocolate, especiarias e um leve amargor. A acidez é mais baixa,
+                    destacando uma doçura suave.</p>
+                <h1>Torra Escura</h1>
+                <p>Grãos de cor marrom muito escuro, com superfície brilhante e oleosa. O sabor é intenso e forte, com
+                    notas de cacau amargo, caramelo queimado e um leve toque de fumaça. Apresenta um corpo pesado, com
+                    amargor acentuado e baixa acidez. </p>
+            </div>
         </article>
 
 
@@ -267,35 +291,36 @@ article {
 
     </section>
     <script>
-    var header = document.getElementById('header')
-var nagivation_header = document.getElementById ('nagivation_header')
-var content = document.getElementById('content')
-var showSidebar = false
-function clicar(){
-    showSidebar = !showSidebar
-    console.log(showSidebar)
-   if(showSidebar){
-    nagivation_header.style.marginLeft ='-65vw'
-    nagivation_header.style.animationName = 'showSidebar'
-    content.style.filter = 'blur(2px)'
-   }else{
-    nagivation_header.style.marginLeft='-1000vw'
-    nagivation_header.style.animationName = ''
-    content.style.filter = ''
-   }
-}   
-function closee(){
-    if(showSidebar){
-        clicar() ;
+        var header = document.getElementById('header')
+        var nagivation_header = document.getElementById('nagivation_header')
+        var content = document.getElementById('content')
+        var showSidebar = false
+        function clicar() {
+            showSidebar = !showSidebar
+            console.log(showSidebar)
+            if (showSidebar) {
+                nagivation_header.style.marginLeft = '-65vw'
+                nagivation_header.style.animationName = 'showSidebar'
+                content.style.filter = 'blur(2px)'
+            } else {
+                nagivation_header.style.marginLeft = '-1000vw'
+                nagivation_header.style.animationName = ''
+                content.style.filter = ''
+            }
+        }
+        function closee() {
+            if (showSidebar) {
+                clicar();
 
-    }
-}
-window.addEventListener('resize',function(event){
-    if(window.innerWidth > 768 && showSidebar){
-        clicar()
-    }
-   
-})
+            }
+        }
+        window.addEventListener('resize', function (event) {
+            if (window.innerWidth > 768 && showSidebar) {
+                clicar()
+            }
+
+        })
     </script>
 </body>
+
 </html>

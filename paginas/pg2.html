@@ -9,239 +9,256 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
-  :root {
-         --cor-1: #8B4513;
-         --cor-2: #ffffff;
-         --cor-3: #f0f0f0;
-         --cor-4: #5a2a07;
-         --cor-5: #411e05;
-         --cor-6: #006400;
-         --cor-7: #000000;
-         --cor-8:#494949;
-         --cor-9:#313131f6;
-         --fonte: 'Merriweather', serif;
-  }
- * {
-      margin: 0;
-      padding: 0;
-}
-section{
-    overflow-x: hidden;
-}
-body {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--cor-3);
-    overflow-x: hidden;
-   
- }
- .img-logo{
-    width: 90px;
-    margin-right: 20px;
-}
-.header, .nagivation_header{
-    background-color: var(--cor-2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-}
+        :root {
+            --cor-1: #8B4513;
+            --cor-2: #ffffff;
+            --cor-3: #f0f0f0;
+            --cor-4: #5a2a07;
+            --cor-5: #411e05;
+            --cor-6: #006400;
+            --cor-7: #000000;
+            --cor-8: #494949;
+            --cor-9: #313131f6;
+            --fonte: 'Merriweather', serif;
+        }
 
-.header{
-    box-shadow: 1px 1px 4px var(--cor-7);
-    height: 10%;  
-    justify-content: center;    
-    padding: 0 ; 
-    position: fixed;
-    width: 100%;
-    z-index: 3; 
-}     
-.nagivation_header{
-    margin-right: -50px;
-    gap: 3em;
-    z-index: 2;
-}
-.nagivation_header a{
-    text-decoration: none;
-    color: var(--cor-1);
-    transition: color 0.3s ease, background-color 0.3s ease; 
-    font-weight: bold;
-    font-size: 1.2em;
-    font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px ; 
-    border-radius: 4px;   
-}
-.nagivation_header a:hover{
-  color: var(--cor-5);
-}
-.btn_icon_header{
-    display: none;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
-   width: 80px;
-   height: 40px;
-   font-size: 24px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
- @media screen and (max-width: 768px) and (min-width:300px) {
+        section {
+            overflow-x: hidden;
+        }
 
- .btn_icon_header {
-        display: block;
-  }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--cor-3);
+            overflow-x: hidden;
 
- .nagivation_header{
-        position: absolute;
-        flex-direction: column;
-        background-color: white;
-        top: 0;
-        height: calc(100vh - 60px);
-        width: 50vw;
-        padding: 25px;
-        animation-duration: .5s;
-        margin-left: -1000vw;
-        cursor: pointer;  
-    }
-.nagivation_header a:hover {
-    background-color: var(--cor-5);  
-    color: var(--cor-2); 
-    margin-left: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-2px); 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-.text3{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: 700px;
- }
- .text3 h1{
-   font-size: 1em; 
-   margin: 10px;
-}
-.campo1 p{
-    color: var(--cor-2);
-    text-align: center;
-    font-size: 1.5em;
-}
+        }
 
-}
-.textp {
-    background: url('img/home2.jpg') no-repeat center center;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--cor-2);
-    text-shadow: 2px 2px 4px var(--cor-7);
-    
-}
+        .img-logo {
+            width: 90px;
+            margin-right: 20px;
+        }
 
-.textp h1 {
-    text-align: center;
-    font-size: 4em;
-    font-weight: 800;
-}
+        .header,
+        .nagivation_header {
+            background-color: var(--cor-2);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
- .text2 img {
-    display: block;
-    margin: 20px auto;
-    width: 30%;
-}
+        .header {
+            box-shadow: 1px 1px 4px var(--cor-7);
+            height: 10%;
+            justify-content: center;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
 
-.textp p {
-    text-align: center;
-    font-size: 1.4em;
-    font-weight: 800;
-    
-}
+        .nagivation_header {
+            margin-right: -50px;
+            gap: 3em;
+            z-index: 2;
+        }
 
-.text2 {
-    margin-top: 60px;
-    padding: 20px;
-    text-align: center;
-    height: 400px;
-}
+        .nagivation_header a {
+            text-decoration: none;
+            color: var(--cor-1);
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-weight: bold;
+            font-size: 1.2em;
+            font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            border-radius: 4px;
+        }
 
-.text2 h1 {
-    color: var(--cor-1);
-    font-size: 2.4em;
-    font-weight: bold;
-}
+        .nagivation_header a:hover {
+            color: var(--cor-5);
+        }
 
-.text2 p {
-    color: var(--cor-8);
-    font-size: 1.3em;
-    margin-bottom: 30px;
-}
+        .btn_icon_header {
+            display: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 80px;
+            height: 40px;
+            font-size: 24px;
+        }
 
-.imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 80px;
-   
-}
+        @media screen and (max-width: 768px) and (min-width:300px) {
 
-.imagens img {
-    background-size: cover;
-     width: 200px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.text3 {
-    background-color: var(--cor-4);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 600px;
-    padding: 20px; 
-    margin-top: 50px;
-    
-}
+            .btn_icon_header {
+                display: block;
+            }
 
-.campo1 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+            .nagivation_header {
+                position: absolute;
+                flex-direction: column;
+                background-color: white;
+                top: 0;
+                height: calc(100vh - 60px);
+                width: 50vw;
+                padding: 25px;
+                animation-duration: .5s;
+                margin-left: -1000vw;
+                cursor: pointer;
+            }
 
-.campo1 h1{
-   color: var(--cor-2);
-   text-align: center;
-   font-size: 3.0em;
-   padding: 10px;
-}
-.campo1 img{
-    width: 300px;
-    padding: 15px;
-}
-.campo1 p{
-    color: var(--cor-2);
-    text-align: center;
-    font-size: 1.3em;
-    padding-bottom: 10px;
-}
+            .nagivation_header a:hover {
+                background-color: var(--cor-5);
+                color: var(--cor-2);
+                margin-left: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            }
 
-.campo2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;  
-}
+            .text3 {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                height: 700px;
+            }
 
-.campo2 video {
-    display: block;
-    margin: auto;
-    max-width: 700px;
-    min-width: 200px;
-    align-items: center;
-    padding-right: 80px;
-}
+            .text3 h1 {
+                font-size: 1em;
+                margin: 10px;
+            }
 
+            .campo1 p {
+                color: var(--cor-2);
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+        }
+
+        .textp {
+            background: url('img/home2.jpg') no-repeat center center;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-2);
+            text-shadow: 2px 2px 4px var(--cor-7);
+
+        }
+
+        .textp h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: 800;
+        }
+
+        .text2 img {
+            display: block;
+            margin: 20px auto;
+            width: 30%;
+        }
+
+        .textp p {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 800;
+
+        }
+
+        .text2 {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+            height: 400px;
+        }
+
+        .text2 h1 {
+            color: var(--cor-1);
+            font-size: 2.4em;
+            font-weight: bold;
+        }
+
+        .text2 p {
+            color: var(--cor-8);
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .imagens {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+
+        }
+
+        .imagens img {
+            background-size: cover;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text3 {
+            background-color: var(--cor-4);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 600px;
+            padding: 20px;
+            margin-top: 50px;
+
+        }
+
+        .campo1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .campo1 h1 {
+            color: var(--cor-2);
+            text-align: center;
+            font-size: 3.0em;
+            padding: 10px;
+        }
+
+        .campo1 img {
+            width: 300px;
+            padding: 15px;
+        }
+
+        .campo1 p {
+            color: var(--cor-2);
+            text-align: center;
+            font-size: 1.3em;
+            padding-bottom: 10px;
+        }
+
+        .campo2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .campo2 video {
+            display: block;
+            margin: auto;
+            max-width: 700px;
+            min-width: 200px;
+            align-items: center;
+            padding-right: 80px;
+        }
     </style>
 </head>
 
@@ -274,7 +291,7 @@ body {
                 <h1>
                     Nosso cardápio de cafeteria</h1>
             </div>
-            
+
             <div class="text2">
                 <h1>Visite uma unidade para provar cada uma das <br> nossas receitas deliciosas.</h1>
                 <img src="img/elemento.png" alt="">
@@ -284,66 +301,66 @@ body {
 
             </div>
             <div class="imagens">
-                 <img src="img/pao-de-queijo.jfif" alt="brownie">
-                 <img src="img/sanduiche3.jfif" alt="suco-verde">
-                 <img src="img/sanduiché2.jpg" alt="sanduíche">
-                 <img src="img/ovos.jpg" alt="ovos">
-                 <img src="img/rap-10.jpg" alt="rap-10">
-                 <img src="img/canjica.jpg" alt="canjica">
-                 <img src="img/biscoito.jpg" alt="biscoito">
-                 <img src="img/sanduíche.jfif" alt="sanduíche">
-                 <img src="img/brownie.jpg" alt="brownie">
-                  <img src="img/panquecas2.jpg" alt="panquecas">
-                 <img src="img/torta.jpg" alt="torta">
-                 <img src="img/panquecas.jpg" alt="panquecas">
-                 <img src="img/cafe.jpg" alt="cafe">
-                 <img src="img/cafe-gelado.jpg" alt="cafe-gelado">
-                 <img src="img/chocolate-quente.jpg" alt="chocolate-quente">
-                 <img src="img/cha.jpg" alt="chá">
-                 <img src="img/suco-maracuja.jpg" alt="suco-maracuja">
-                 <img src="img/drink-limão.jpg" alt="drink-limão">
+                <img src="img/pao-de-queijo.jfif" alt="brownie">
+                <img src="img/sanduiche3.jfif" alt="suco-verde">
+                <img src="img/sanduiché2.jpg" alt="sanduíche">
+                <img src="img/ovos.jpg" alt="ovos">
+                <img src="img/rap-10.jpg" alt="rap-10">
+                <img src="img/canjica.jpg" alt="canjica">
+                <img src="img/biscoito.jpg" alt="biscoito">
+                <img src="img/sanduíche.jfif" alt="sanduíche">
+                <img src="img/brownie.jpg" alt="brownie">
+                <img src="img/panquecas2.jpg" alt="panquecas">
+                <img src="img/torta.jpg" alt="torta">
+                <img src="img/panquecas.jpg" alt="panquecas">
+                <img src="img/cafe.jpg" alt="cafe">
+                <img src="img/cafe-gelado.jpg" alt="cafe-gelado">
+                <img src="img/chocolate-quente.jpg" alt="chocolate-quente">
+                <img src="img/cha.jpg" alt="chá">
+                <img src="img/suco-maracuja.jpg" alt="suco-maracuja">
+                <img src="img/drink-limão.jpg" alt="drink-limão">
             </div>
             <div class="text3">
                 <div class="campo1">
                     <h1>Assista um vídeo com nossas especialidades</h1>
-                   <img src="img/elemento2.png" alt="">
-                   <p>Acompanhe no vídeo as nossas delícias que podem ser <br> encontradas nas nossas unidades.</p>
+                    <img src="img/elemento2.png" alt="">
+                    <p>Acompanhe no vídeo as nossas delícias que podem ser <br> encontradas nas nossas unidades.</p>
                 </div>
                 <div class="campo2">
-                    <video src="img/video.mp4" controls ></video>
+                    <video src="img/video.mp4" controls></video>
                 </div>
             </div>
         </article>
     </section>
-         
+
     <script>
-       var header = document.getElementById('header')
-var nagivation_header = document.getElementById ('nagivation_header')
-var content = document.getElementById('content')
-var showSidebar = false
-function clicar(){
-    showSidebar = !showSidebar
-    console.log(showSidebar)
-   if(showSidebar){
-    nagivation_header.style.marginLeft ='-65vw'
-    nagivation_header.style.animationName = 'showSidebar'
-    content.style.filter = 'blur(2px)'
-   }else{
-    nagivation_header.style.marginLeft='-1000vw'
-    nagivation_header.style.animationName = ''
-    content.style.filter = ''
-   }
-}   
-function closee(){
-    if(showSidebar){
-        clicar() ;
-    }
-}
-window.addEventListener('resize',function(event){
-    if(window.innerWidth > 768 && showSidebar){
-        clicar()
-    }  
-})
+        var header = document.getElementById('header')
+        var nagivation_header = document.getElementById('nagivation_header')
+        var content = document.getElementById('content')
+        var showSidebar = false
+        function clicar() {
+            showSidebar = !showSidebar
+            console.log(showSidebar)
+            if (showSidebar) {
+                nagivation_header.style.marginLeft = '-65vw'
+                nagivation_header.style.animationName = 'showSidebar'
+                content.style.filter = 'blur(2px)'
+            } else {
+                nagivation_header.style.marginLeft = '-1000vw'
+                nagivation_header.style.animationName = ''
+                content.style.filter = ''
+            }
+        }
+        function closee() {
+            if (showSidebar) {
+                clicar();
+            }
+        }
+        window.addEventListener('resize', function (event) {
+            if (window.innerWidth > 768 && showSidebar) {
+                clicar()
+            }
+        })
     </script>
 </body>
 

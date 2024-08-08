@@ -2,9 +2,9 @@
 
 * {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
     box-sizing: border-box;
-    
+
 }
 
 :root {
@@ -17,59 +17,68 @@
     --cor-7: #000000;
     --fonte: 'Merriweather', serif;
 }
+
 body {
-    background-color: var(--cor-3);  
+    background-color: var(--cor-3);
 }
-section{
+
+section {
     overflow-x: hidden;
 }
-.img-logo{
+
+.img-logo {
     width: 90px;
     margin-right: 20px;
 }
-.header, .nagivation_header{
+
+.header,
+.nagivation_header {
     background-color: var(--cor-2);
     display: flex;
     flex-direction: row;
-    align-items: center;  
+    align-items: center;
 }
 
-.header{
+.header {
     box-shadow: 1px 1px 4px var(--cor-7);
     height: 10%;
-    justify-content: center;    
-    padding: 0 ;   
+    justify-content: center;
+    padding: 0;
     position: fixed;
     width: 100%;
     z-index: 3;
-    
-}     
-.nagivation_header{
+
+}
+
+.nagivation_header {
     margin-right: -50px;
     gap: 3em;
     z-index: 2;
 }
-.nagivation_header a{
+
+.nagivation_header a {
     text-decoration: none;
     color: var(--cor-1);
-    transition: color 0.3s ease, background-color 0.3s ease; 
+    transition: color 0.3s ease, background-color 0.3s ease;
     font-weight: bold;
     font-size: 1.1em;
     font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px ; 
-    border-radius: 4px;   
+    padding: 10px;
+    border-radius: 4px;
 }
-.nagivation_header a:hover{
-  color: var(--cor-5);
+
+.nagivation_header a:hover {
+    color: var(--cor-5);
 }
-.btn_icon_header{
+
+.btn_icon_header {
     display: none;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
-   width: 80px;
-   height: 40px;
-   font-size: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 24px;
 }
 
 #imgp {
@@ -79,16 +88,17 @@ section{
     width: 100%;
     height: 800px;
     color: var(--cor-2);
-   
-    
+
+
 }
+
 #imgp p {
     text-align: center;
     margin: auto;
     font-size: 2em;
     width: 80%;
     margin-top: 30px;
-    
+
 }
 
 #imgp h1 {
@@ -103,37 +113,42 @@ section{
     margin-top: 40px;
     overflow-x: hidden;
 }
+
 #icardapio h2 {
     text-align: center;
     color: var(--cor-1);
     padding: 40px;
     padding-top: 200px;
     font-size: 4em;
-    margin-bottom: -30px;   
+    margin-bottom: -30px;
 }
-#icardapio img{
+
+#icardapio img {
     max-width: 400px;
     padding: 20px;
 }
+
 #icardapio p {
     text-align: center;
     font-size: 1.3em;
 }
+
 #icardapio a {
-  background-color: var(--cor-1);
-  color: var(--cor-2);
-  text-decoration: none;
-  display: block;
-  max-width: 240px;
-  min-width: 100px;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  padding: 15px;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
+    text-decoration: none;
+    display: block;
+    max-width: 240px;
+    min-width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
 }
-#icardapio a:hover{
+
+#icardapio a:hover {
     background-color: var(--cor-4);
-    
+
 }
 
 
@@ -199,23 +214,27 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.5);   
+    background: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
 }
 
-.footer1 h1, .footer2 h3 {
+.footer1 h1,
+.footer2 h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
- .footer2 label {
+.footer2 label {
     margin-bottom: 10px;
 }
 
-.footer1 h3, .footer2  label {
-    color: yellow;  
+.footer1 h3,
+.footer2 label {
+    color: yellow;
 }
-.footer1 p, .footer2 p {
+
+.footer1 p,
+.footer2 p {
     line-height: 1.5;
     margin-bottom: 15px;
     font-size: 1em;
@@ -226,7 +245,8 @@ footer {
     flex-direction: column;
 }
 
-.footer2 input,.footer2 select {
+.footer2 input,
+.footer2 select {
     padding: 10px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
@@ -255,67 +275,83 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-   
+
     footer {
         flex-direction: column;
         align-items: center;
     }
-    #imgp{
-       background-position:  center top;
-      
-    }
-    #imgf{
-       background-position: top center;  
+
+    #imgp {
+        background-position: center top;
+
     }
 
-    .footer1, .footer2 {
+    #imgf {
+        background-position: top center;
+    }
+
+    .footer1,
+    .footer2 {
         margin-right: 0;
         width: 100%;
         margin-top: 20px;
     }
-    #icardapio img{
+
+    #icardapio img {
         width: 300px;
     }
-  
-    .footer2 input, .footer2 textarea, .footer2 select {
+
+    .footer2 input,
+    .footer2 textarea,
+    .footer2 select {
         width: 100%;
     }
+
     .btn_icon_header {
         display: block;
     }
-  
-   .nagivation_header{
-          position: absolute;
-          flex-direction: column;
-          background-color: white;
-          top: 0;
-          height: 1000px;
-          width:60vw;
-          padding:10px;
-          animation-duration: .5s;
-          margin-left: -1000vw;
-          cursor: pointer;  
-      } 
-      .nagivation_header a:hover {
-        background-color: var(--cor-5);  
+
+    .nagivation_header {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        top: 0;
+        height: 1000px;
+        width: 60vw;
+        padding: 10px;
+        animation-duration: .5s;
+        margin-left: -1000vw;
+        cursor: pointer;
+    }
+
+    .nagivation_header a:hover {
+        background-color: var(--cor-5);
         color: var(--cor-2);
-        margin-left: 30px; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-        transform: translateY(-2px); 
+        margin-left: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
         transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     }
+
     #cafe p {
         padding: 10px;
     }
-    #cafetrad{
+
+    #cafetrad {
         flex-direction: column;
         font-size: 1.0em;
-       
-        
+
+
     }
 }
-@keyframes showSidebar{
-    from{margin-left: -200vw;}
-        top{margin-left: -65vw;}
-    
+
+@keyframes showSidebar {
+    from {
+        margin-left: -200vw;
+    }
+
+    top {
+        margin-left: -65vw;
+    }
+
 }

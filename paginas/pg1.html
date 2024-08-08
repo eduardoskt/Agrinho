@@ -31,9 +31,11 @@
             font-family: Arial, sans-serif;
             background-color: #b9b9b99c;
         }
-        section{
-               overflow-x: hidden;
-                 } 
+
+        section {
+            overflow-x: hidden;
+        }
+
         #fundo1 {
             background: black url('img/fundo1-home.jpg') no-repeat center center/cover;
             height: 500px;
@@ -62,7 +64,7 @@
         article h2 {
             font-size: 2.5em;
             font-family: var(--fonte);
-            margin: 10px 0  20px;
+            margin: 10px 0 20px;
             color: var(--cor-1);
         }
 
@@ -80,91 +82,102 @@
             padding-left: 20px;
             color: black;
         }
-        
+
         ul li strong {
             font-size: 1.2em;
             margin-bottom: 10px;
-            
+
 
         }
- .img-logo{
-    width: 90px;
-    margin-right: 20px;
-}
-.header, .nagivation_header{
-    background-color: var(--cor-2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-}
 
-.header{
-    box-shadow: 1px 1px 4px var(--cor-7);
-    height: 10%;  
-    justify-content: center;    
-    padding: 0 ; 
-    position: fixed;
-    width: 100%;
-    z-index: 3; 
-}     
-.nagivation_header{
-    margin-right: -50px;
-    gap: 3em;
-    z-index: 2;
-}
-.nagivation_header a{
-    text-decoration: none;
-    color: var(--cor-1);
-    transition: color 0.3s ease, background-color 0.3s ease; 
-    font-weight: bold;
-    font-size: 1.1em;
-    font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px ; 
-    border-radius: 4px;   
-}
-.nagivation_header a:hover{
-  color: var(--cor-5);
-}
-.btn_icon_header{
-    display: none;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
-   width: 80px;
-   height: 40px;
-   font-size: 24px;
-}
- @media screen and (max-width: 768px){
-    
-  .btn_icon_header {
-      display: block;
-  }
+        .img-logo {
+            width: 90px;
+            margin-right: 20px;
+        }
 
-  .nagivation_header{
-        position: absolute;
-        flex-direction: column;
-        background-color: white;
-        top: 0;
-        height: calc(100vh - 60px);
-        width: 60vw;
-        padding: 24px;
-        animation-duration: .5s;
-        margin-left: -1000vw;
-        cursor: pointer;  
-    }
-.nagivation_header a:hover {
-    background-color: var(--cor-5);  
-    color: var(--cor-2); 
-    margin-left: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transform: translateY(-2px); 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-    #cafetrad {
+        .header,
+        .nagivation_header {
+            background-color: var(--cor-2);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .header {
+            box-shadow: 1px 1px 4px var(--cor-7);
+            height: 10%;
+            justify-content: center;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .nagivation_header {
+            margin-right: -50px;
+            gap: 3em;
+            z-index: 2;
+        }
+
+        .nagivation_header a {
+            text-decoration: none;
+            color: var(--cor-1);
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-weight: bold;
+            font-size: 1.1em;
+            font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .nagivation_header a:hover {
+            color: var(--cor-5);
+        }
+
+        .btn_icon_header {
+            display: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 80px;
+            height: 40px;
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .btn_icon_header {
+                display: block;
+            }
+
+            .nagivation_header {
+                position: absolute;
+                flex-direction: column;
+                background-color: white;
+                top: 0;
+                height: calc(100vh - 60px);
+                width: 60vw;
+                padding: 24px;
+                animation-duration: .5s;
+                margin-left: -1000vw;
+                cursor: pointer;
+            }
+
+            .nagivation_header a:hover {
+                background-color: var(--cor-5);
+                color: var(--cor-2);
+                margin-left: 30px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: translateY(-2px);
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            }
+
+            #cafetrad {
                 flex-direction: column;
                 font-size: 1.0em;
             }
         }
+
         @keyframes showSidebar {
             from {
                 margin-left: -1000vw;
@@ -180,19 +193,19 @@
 
 <body>
     <div class="header" id="header">
-                 <button class="btn_icon_header" onclick="clicar()">
-                      <span class="material-symbols-outlined">
-                         menu
-                     </span>
-                </button>
-              <div class="logo_header">
-                     <a href="../404.html"><img src="img/logo.png" alt="logo" class="img-logo"></a>
-             </div>
+        <button class="btn_icon_header" onclick="clicar()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <div class="logo_header">
+            <a href="../404.html"><img src="img/logo.png" alt="logo" class="img-logo"></a>
+        </div>
         <div class="nagivation_header" id="nagivation_header">
             <button class="btn_icon_header" onclick="clicar()">
-                    <span class="material-symbols-outlined">
-                          close
-                     </span>
+                <span class="material-symbols-outlined">
+                    close
+                </span>
             </button>
             <a href="../404.html" class="active"> HOME</a>
             <a href="pg1.html"> NOSSA HISTÓRIA </a>
